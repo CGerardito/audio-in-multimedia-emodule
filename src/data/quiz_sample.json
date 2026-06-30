@@ -1,0 +1,254 @@
+{
+  "title": "Audio dalam Multimedia",
+  "description": "Peran Audio dalam Multimedia, Stereo/Mono, Visualisasi Audio, Format Penyimpanan Audio, Lisensi Aset Audio, DAW, Dokumentasi Desain Audio",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Audio adalah?",
+      "choices": [
+        "Getaran dari suatu sumber suara",
+        "Listrik yang mengalir melalui speaker",
+        "Representasi suara secara digital",
+        "Aliran udara yang melewati telinga"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "q2",
+      "prompt": "Apa peran audio dalam sebuah multimedia?",
+      "choices": [
+        "Memperkuat kesan visual dengan menstimulasi indra perasa",
+        "Memperkuat kesan visual dengan menstimulasi indra pendengaran",
+        "Memperkuat kesan visual dengan menstimulasi indra peraba",
+        "Memperkuat kesan visual dengan menstimulasi indra visual"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "q3",
+      "prompt": "Bagaimana audio dapat merepresentasikan suara secara digital?",
+      "choices": [
+        "Dengan menyisihkan aspek suara menggunakan sistem lalu menyusun ulang suaranya dari data yang didapat",
+        "Dengan mengambil data sampel gelombang setiap detik lalu menerjemahkannya dengan teks",
+        "Dengan mengambil data sampel gelombang setiap detik lalu menyusun ulang suaranya dari data yang didapat",
+        "Dengan menyisihkan aspek suara menggunakan sistem lalu menerjemahkannya dengan teks"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "q4",
+      "prompt": "Apa perbedaan dari audio yang mono dengan audio yang stereo?",
+      "choices": [
+        "Audio mono dimainkan dengan satu kanal, sedangkan audio stereo dimainkan dengan dua kanal",
+        "Audio mono khusus untuk multimedia linear, sedangkan audio stereo khusus untuk multimedia non-linear",
+        "Pembuat sistem audio mono membuatnya khusus agar dapat mengalahkan audio stereo",
+        "Kualitas audio mono sedikit lebih bagus dari audio stereo"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q5",
+      "prompt": "Apakah audio berikut ini bersifat stereo atau mono?",
+      "media": {
+        "type": "audio",
+        "src": "/assets/quiz/CarStereo.ogg"
+      },
+      "choices": [
+        "Mono",
+        "Stereo",
+        "Keduanya",
+        "Tidak keduanya"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "q6",
+      "prompt": "Diagram berikut menggambarkan ...",
+      "media": {
+        "type": "image",
+        "src": "/assets/quiz/surroundSound.jpg"
+      },
+      "choices": [
+        "Sistem Ground Audio",
+        "Sistem StereoX",
+        "Sistem Mono-Speaker",
+        "Sistem Surround Sound"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "q7",
+      "prompt": "Audio mono biasa digunakan untuk hal-hal berikut, kecuali ...?",
+      "choices": [
+        "Speaker TOA",
+        "Telepon",
+        "Podcast",
+        "Home Theater"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "q8",
+      "prompt": "Penggabungan musik, efek suara, serta dialog karakter yang dapat bermain bersama dalam satu audio yang padu dan harmonis. Ini adalah komponen audio ...",
+      "choices": [
+        "Musik",
+        "Efek Suara",
+        "Suara (Voice)",
+        "Mixing"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "q9",
+      "prompt": "Gambar berikut ini menunjukkan visualisasi audio dengan metode ...",
+      "media": {
+        "type": "image",
+        "src": "/assets/quiz/spectogram.png"
+      },
+      "choices": [
+        "Spektogram",
+        "Sonogram",
+        "Ambigram",
+        "Instagram"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q10",
+      "prompt": "Berikut adalah karakteristik utama dari format file audio yang sekarang digunakan, kecuali ...?",
+      "choices": [
+        "Compressed Lossless",
+        "Compressed Lossy",
+        "Uncompressed Lossless",
+        "Uncompressed Lossy"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "q11",
+      "prompt": "Semakin terang warnanya, semakin besar volume audio pada frekuensi tersebut. Ini merupakan metode visualisasi audio ...",
+      "choices": [
+        "Instagram",
+        "Ambigram",
+        "Spektogram",
+        "Sonogram"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "q12",
+      "prompt": "Lembaga non-profit internasional yang telah mendedikasikan waktu untuk membangan dan menjaga sistem legalitas karya yang lebih fleksibel adalah ... (Inisial: CC)",
+      "choices": [
+        "Commons Checks",
+        "Creative Commons",
+        "Cuantive Commons",
+        "Common Creativity"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "q13",
+      "prompt": "Format file audio ini besar, namun seluruh data sampelnya masih tersimpan. Pernyataan tersebut menunjukkan karakteristik dari file ...",
+      "choices": [
+        "WAV",
+        "OGG",
+        "MP3",
+        "FLAC"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q14",
+      "prompt": "Karya ini bebas digunakan untuk keperluan apapun selama itu non-komersial. Selama karya tidak dimodifikasi dan pembuat karya menerima atribusi. Deskripsi ini sesuai dengan lisensi ...",
+      "choices": [
+        "CC-BY-NC-SA",
+        "CC-BY-NC-ND",
+        "CC-NC-SA-ND",
+        "CC-BY-SA-ND"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "q15",
+      "prompt": "Fungsi untuk dapat mengatur volume, panning, dan menambahkan efek audio sebagai finalisasi merupakan fungsi DAW sebagai ...",
+      "choices": [
+        "Mixing & Mastering",
+        "MIDI Sequencing",
+        "Audio Recording",
+        "Audio Editing"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q16",
+      "prompt": "Efek suara berikut ini dapat dideskripsikan sebagai hal-hal berikut, kecuali ...?",
+      "media": {
+        "type": "audio",
+        "src": "/assets/quiz/sinkDrain2.ogg"
+      },
+      "choices": [
+        "Gerutu makhluk monster yang hidup dibawah laut",
+        "Wastafel yang sedang membuang air",
+        "Senapan laser futuristik ditembak",
+        "Seseorang menyeruput habis minuman dengan sedotan"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "q17",
+      "prompt": "Agar proses pembuatan audio untuk suatu multimedia dapat berjalan secara sistematis, maka pembuat audio perlu membuat ...",
+      "choices": [
+        "Catatan Diary",
+        "Dokumen Desain",
+        "Mie Ayam Yamin",
+        "Artikel Jurnal"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "q18",
+      "prompt": "Cuplikan musik berikut ini memberikan kesan ...",
+      "media": {
+        "type": "audio",
+        "src": "/assets/quiz/bensound_buddy.ogg"
+      },
+      "choices": [
+        "Marah",
+        "Senang",
+        "Tegang",
+        "Sedih"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "q19",
+      "prompt": "Gambar berikut ini menunjukkan sebuah ...",
+      "media": {
+        "type": "image",
+        "src": "/assets/quiz/ableton_sc.png"
+      },
+      "choices": [
+        "DAW",
+        "AWD",
+        "WDA",
+        "OAW"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q20",
+      "prompt": "Menurut dokumen berikut, cue ke-1M2 mengindikasi hal-hal berikut, kecuali ...?",
+      "media": {
+        "type": "image",
+        "src": "/assets/quiz/MusicSpot_CravenBlack.png"
+      },
+      "choices": [
+        "Durasinya 12 detik untuk memainkan skor utama tanpa efek audio apapun",
+        "Durasinya 30 detik untuk memainkan skor utama dengan efek audio yang datang dari radio",
+        "Durasinya 12 detik untuk memainkan skor utama dengan efek audio yang datang dari radio",
+        "Durasinya 30 detik untuk memainkan skor utama tanpa efek audio apapun"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+@import "./assets/fonts/fonts.css";
+@import "tailwindcss";
+
+/*
+ * ============================================================================
+ * TAILWIND THEME TOKENS
+ * ============================================================================
+ * Register your fonts here so you can use them as Tailwind classes:
+ *   <h1 class="font-display">...</h1>
+ *   <p class="font-body">...</p>
+ *
+ * Until you add real fonts, the system sans-serif stack is used as fallback.
+ * ============================================================================
+ */
+@theme {
+   --font-PJS: "PJS", ui-sans-serif, system-ui, sans-serif;
+   --font-JBM: "JBM", ui-sans-serif, system-ui, sans-serif;
+
+  /* Color Palette */
+  --color-base: #121212; /* background */
+  --color-navy: #2c3e50; /* accent */
+  --color-neon: #00d1ff; /* contrast */
+  --color-gold: #ffb800; /* complement */
+  --color-plat: #e0e0e0; /* text */
+}
+
+/* === Custom scrollbar ===
+ * Apply with className="custom-scroll" on any scrollable element.
+ * - No arrows (webkit-button: display none)
+ * - Rounded track + thumb
+ * - Navy track, neon-blue thumb
+ */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #00D1FF #2C3E50;
+}
+.custom-scroll::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: #2C3E50;
+  border-radius: 9999px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #00D1FF;
+  border-radius: 9999px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #00b8e6;
+}
+.custom-scroll::-webkit-scrollbar-button {
+  display: none;  /* hides the up/down arrows */
+}
+
+/*
+ * ============================================================================
+ * BASE STYLES
+ * ============================================================================
+ */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+  font-family: var(--font-body, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
