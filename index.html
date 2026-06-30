@@ -9,5 +9,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Redirect non-root direct accesses to the landing page.
+      // This handles refresh/bookmark/shared-link scenarios on GitHub Pages.
+      (function() {
+        var basePath = '/audio-in-multimedia-emodule/'
+        var path = window.location.pathname
+
+        // Normalize for comparison (remove trailing slash)
+        var normalizedPath = path.endsWith('/') ? path.slice(0, -1) : path
+        var normalizedBase = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath
+
+        // If not at root, redirect to landing
+        if (normalizedPath !== normalizedBase) {
+          window.location.replace(basePath)
+        }
+      })()
+    </script>
   </body>
 </html>
