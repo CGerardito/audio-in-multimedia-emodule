@@ -4,6 +4,7 @@ import { useSectionNav } from '../hooks/useSectionNav.js'
 import { AUDIO_DESIGN_DOC as ADD } from '../data/simulations/audio_design_doc.js'
 import AudioButton from '../components/AudioButton.jsx'
 import BurgerButton from "../components/BurgerButton.jsx";
+import { asset } from "../utils/assetPath.js";
 
 /**
  * AudioDesignDocSimPage
@@ -208,7 +209,7 @@ export default function AudioDesignDocSimPage() {
                   <figure key={i} className="text-center">
                     <div className="aspect-video bg-navy/10 rounded-lg overflow-hidden border-2 border-navy/20">
                       <img
-                        src={img.src}
+                        src={asset(img.src)}
                         alt={img.caption}
                         className="w-full h-full object-cover select-none pointer-events-none"
                       />
@@ -420,7 +421,7 @@ function AudioChoiceField({ field, answer, submitted, onSelect }) {
               <div className="flex justify-center">
                 <AudioButton
                     compact
-                  src={opt.audioSrc}
+                  src={asset(opt.audioSrc)}
                   label="Dengar"
                   className="!text-base !bg-navy !text-plat hover:!bg-neon hover:!text-base"
                 />
@@ -495,7 +496,7 @@ function AudioChoiceMultiField({ field, answer, submitted, onSelect }) {
                       </label>
                       <AudioButton
                           compact
-                        src={opt.audioSrc}
+                        src={asset(opt.audioSrc)}
                         label="Dengar"
                         className="!text-base !bg-navy !text-plat hover:!bg-neon hover:!text-base !px-5 !py-3 !text-lg"
                       />

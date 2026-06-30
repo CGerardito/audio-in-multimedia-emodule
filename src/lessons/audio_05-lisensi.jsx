@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { asset } from "../utils/assetPath.js";
 import spectrumOfRights from "/assets/images/Spectrumofrights.jpg";
 
 /* ============================================================================
@@ -338,7 +339,7 @@ export default function Licensing() {
 
           <div className="flex justify-center mb-4">
             <img
-                src={activeTerminology.image}
+                src={asset(activeTerminology.image)}
                 alt={activeTerminology.label}
                 className="w-48 h-48 object-contain p-4 rounded-2xl bg-plat select-none pointer-events-none"
             />
@@ -391,7 +392,7 @@ export default function Licensing() {
               className="bg-navy rounded-2xl p-4"
             >
               <img
-                  src={elem.image}
+                  src={asset(elem.image)}
                   alt={elem.code}
                   className="w-48 h-48 object-contain p-4 rounded-t-2xl bg-plat select-none pointer-events-none"
               />
@@ -463,7 +464,7 @@ export default function Licensing() {
                       hasAnswered ? 'cursor-default' : 'cursor-pointer'
                     }`}
                 >
-                  <img src={license.icon} alt={license.label} className="border border-plat pointer-events-none select-none"/>
+                  <img src={asset(license.icon)} alt={license.label} className="border border-plat pointer-events-none select-none"/>
                 </button>
               )
             })}

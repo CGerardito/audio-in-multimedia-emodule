@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import Modal from './Modal.jsx'
+import { asset } from '../utils/assetPath.js'
 
 /**
  * ImageGallery
@@ -107,7 +108,7 @@ export default function ImageGallery({ images, className = '' }) {
                      cursor-zoom-in touch-pan-y"
         >
           <img
-            src={current.src}
+            src={asset(current.src)}
             alt={current.caption || `Image ${currentIndex + 1}`}
             className="w-full h-full object-contain pointer-events-none select-none p-6"
             draggable={false}
@@ -170,7 +171,7 @@ export default function ImageGallery({ images, className = '' }) {
       >
         <div className="flex flex-col items-center">
           <img
-            src={current.src}
+            src={asset(current.src)}
             alt={current.caption || `Image ${currentIndex + 1}`}
             className="w-full h-auto max-h-[70vh] object-contain pointer-events-none select-none"
           />

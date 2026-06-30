@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import { Link, useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useSectionNav } from '../hooks/useSectionNav.js'
 import { useScrollReset } from "../hooks/useScrollReset.js";
 import quizData from '../data/quiz_sample.json'
 import { saveScoreIfHigher } from '../utils/highScore.js'
 import AudioButton from '../components/AudioButton.jsx'
 import BurgerButton from "../components/BurgerButton.jsx";
+import { asset } from "../utils/assetPath.js";
 
 /**
  * QuizPage (Player) — SINGLE PAGE VERSION
@@ -135,7 +136,6 @@ export default function QuizPage() {
           <div className="space-y-12 mt-24">
             {quiz.questions.map((question, qIndex) => {
               const userAnswer = answers[qIndex]
-              const isAnswered = userAnswer !== undefined && userAnswer !== null
               const isCorrect = submitted && userAnswer === question.answerIndex
 
               return (
@@ -290,7 +290,7 @@ function QuestionMedia({ media }) {
   if (media.type === 'image') {
     return (
       <img
-        src={media.src}
+        src={asset(media.src)}
         alt="Question reference"
         className="max-w-full max-h-96 rounded-xl border-2 border-navy mx-auto pointer-events-none select-none"
       />
@@ -300,7 +300,7 @@ function QuestionMedia({ media }) {
   if (media.type === 'audio') {
     return (
       <div className="flex w-full justify-center p-4">
-        <AudioButton src={media.src} label="Putar Audio" compact />
+        <AudioButton src={asset(media.src)} label="Putar Audio" compact />
       </div>
     )
   }
@@ -319,7 +319,7 @@ function QuestionMedia({ media }) {
     }
     return (
       <video
-        src={media.src}
+        src={asset(media.src)}
         controls
         controlsList="nodownload noplaybackrate noremoteplayback"
         disablePictureInPicture
@@ -340,7 +340,7 @@ function ChoiceMedia({ media }) {
   if (media.type === 'image') {
     return (
       <img
-        src={media.src}
+        src={asset(media.src)}
         alt="Choice"
         className="max-h-32 rounded-lg border border-navy"
       />
@@ -350,7 +350,7 @@ function ChoiceMedia({ media }) {
   if (media.type === 'audio') {
     return (
       <div className="mt-2">
-        <AudioButton src={media.src} label="Dengar" compact />
+        <AudioButton src={asset(media.src)} label="Dengar" compact />
       </div>
     )
   }

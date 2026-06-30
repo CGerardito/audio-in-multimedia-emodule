@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { asset } from "../utils/assetPath.js";
 
 /* ============================================================================
  * DAW TAB DATA
@@ -218,7 +219,7 @@ export default function DigitalAudioWorkstation() {
                                 aria-label={daw.name}
                             >
                                 <img
-                                    src={daw.logo}
+                                    src={asset(daw.logo)}
                                     alt={daw.name}
                                     className="w-24 h-24 object-contain pointer-events-none select-none"
                                 />
@@ -237,7 +238,7 @@ export default function DigitalAudioWorkstation() {
                         {/* Screenshot at the top */}
                         <div className="flex justify-center mb-6">
                             <img
-                                src={activeDAW.screenshot}
+                                src={asset(activeDAW.screenshot)}
                                 alt={`${activeDAW.name} screenshot`}
                                 className="w-full max-w-4xl rounded-2xl border-2 border-neon pointer-events-none select-none"
                             />
@@ -265,7 +266,7 @@ export default function DigitalAudioWorkstation() {
                                     <td className="px-6 py-4">
                                         <div className="flex flex-col items-center">
                                             <img
-                                                src='/assets/images/daw_sc-ico/bandlab_ico.png'
+                                                src={asset(DAW_TABS.find(item => item.id === "bandlab")?.logo)}
                                                 alt='Logo BandLab'
                                                 className="w-24 h-24 object-contain pointer-events-none select-none mb-4"
                                             />
@@ -282,7 +283,7 @@ export default function DigitalAudioWorkstation() {
                                     <td className="px-6 py-4">
                                         <div className="flex flex-col items-center">
                                             <img
-                                                src='/assets/images/daw_sc-ico/reaper_ico.png'
+                                                src={asset(DAW_TABS.find(item => item.id === "reaper")?.logo)}
                                                 alt='Logo REAPER'
                                                 className="w-24 h-24 object-contain pointer-events-none select-none mb-4"
                                             />
